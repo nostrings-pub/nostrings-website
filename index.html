@@ -3,54 +3,117 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="nostrings.pub is a longform publishing platform for writers who want permanence, freedom, and direct connection to readers — built on Nostr." />
+  <title>nostrings.pub — Longform publishing on the open web</title>
+  <meta name="description" content="A longform publishing platform for writers who want permanence, freedom, and direct connection to readers — built on Nostr." />
   <meta property="og:title" content="nostrings.pub — Longform publishing on the open web" />
   <meta property="og:description" content="A censorship-resistant, markdown-powered, Nostr-native writing platform for free minds." />
   <meta property="og:image" content="https://nostrings.pub/logo-nostrings.png" />
   <meta property="og:url" content="https://nostrings.pub" />
   <meta name="twitter:card" content="summary_large_image" />
-  <title>nostrings.pub — Longform publishing on the open web</title>
   <style>
     body {
       font-family: system-ui, sans-serif;
-      padding: 4rem;
-      max-width: 600px;
+      padding: 4rem 2rem;
+      max-width: 640px;
       margin: auto;
       background: #fafafa;
       color: #333;
     }
-    h1 { font-size: 2.5rem; margin-bottom: 1rem; }
-    p { line-height: 1.5; }
-    code { background: #eee; padding: 0.2em 0.4em; border-radius: 4px; }
+
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    header img {
+      max-width: 280px;
+      height: auto;
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    p {
+      line-height: 1.6;
+      margin: 1rem 0;
+    }
+
+    .follow-section {
+      margin-top: 2rem;
+      border-top: 1px solid #ddd;
+      padding-top: 1.5rem;
+    }
+
+    .pubkey {
+      word-break: break-all;
+      font-size: 0.9rem;
+      color: #555;
+      margin: 0.5rem 0;
+    }
+
+    .client-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 1rem;
+    }
+
+    .client-links a {
+      background: #eee;
+      padding: 0.4em 0.8em;
+      border-radius: 6px;
+      text-decoration: none;
+      color: #333;
+      font-size: 0.95rem;
+      transition: background 0.2s ease;
+    }
+
+    .client-links a:hover {
+      background: #ddd;
+    }
+
+    small {
+      display: block;
+      margin-top: 3rem;
+      font-size: 0.85rem;
+      text-align: center;
+      color: #777;
+    }
   </style>
 </head>
 <body>
-  <header style="text-align: center; margin: 2rem 0;">
-    <img src="/logo-nostrings.png" alt="nostrings.pub logo" style="max-width: 300px; height: auto;" />
+
+  <header>
+    <img src="/logo-nostrings.png" alt="nostrings.pub logo" />
   </header>
+
+  <h1>Longform publishing, no strings attached</h1>
+
   <p>A long-form publishing platform for writers who want permanence, freedom, and a direct connection to their readers — with <strong>no strings attached</strong>.</p>
 
   <p><em>Coming soon:</em> Built on Nostr. Markdown-based. Open. Censorship-resistant. No algorithmic timelines.</p>
 
-  <p>
-    Follow me on Nostr:<br />
-    <code>nostrings.pub@nostr.com</code><br />
-    or <code>npub1qgs79628k04ldhaeepgs0ja72377rcexfz984gw7kk2p2f7ne65s9n022d</code><br />
-    <a href="https://nosta.me/0221e2e947b3ebf6dfb9c85107cbbe547de1e326488a7aa1deb5941527d3cea9" target="_blank" rel="noopener">
-      View on nosta.me
-    </a>
-  </p>
+  <div class="follow-section">
+    <p><strong>Follow me on Nostr:</strong></p>
+    <p><code>nostrings.pub@nostr.com</code></p>
+    <p class="pubkey">npub1qgs79628k04ldhaeepgs0ja72377rcexfz984gw7kk2p2f7ne65s9n022d</p>
+    <p><a href="https://nosta.me/0221e2e947b3ebf6dfb9c85107cbbe547de1e326488a7aa1deb5941527d3cea9" target="_blank" rel="noopener">View on nosta.me</a></p>
 
-  <p>Open in your favorite Nostr client:</p>
-  <ul>
-    <li><a href="https://snort.social/p/npub1qgs79628k04ldhaeepgs0ja72377rcexfz984gw7kk2p2f7ne65s9n022d" target="_blank">Snort</a></li>
-    <li><a href="https://iris.to/npub1qgs79628k04ldhaeepgs0ja72377rcexfz984gw7kk2p2f7ne65s9n022d" target="_blank">Iris</a></li>
-    <li><a href="https://coracle.social/npub1qgs79628k04ldhaeepgs0ja72377rcexfz984gw7kk2p2f7ne65s9n022d" target="_blank">Coracle</a></li>
-    <li><a href="https://primal.net/p/npub1qgs79628k04ldhaeepgs0ja72377rcexfz984gw7kk2p2f7ne65s9n022d" target="_blank">Primal</a></li>
-    <li><a href="nostr:npub1qgs79628k04ldhaeepgs0ja72377rcexfz984gw7kk2p2f7ne65s9n022d">Open with Nostr extension</a></li>
-  </ul>
+    <p><strong>Open in your favorite Nostr client:</strong></p>
+    <div class="client-links">
+      <a href="https://snort.social/p/npub1qgs79628k04ldhaeepgs0ja72377rcexfz984gw7kk2p2f7ne65s9n022d" target="_blank">Snort</a>
+      <a href="https://iris.to/npub1qgs79628k04ldhaeepgs0ja72377rcexfz984gw7kk2p2f7ne65s9n022d" target="_blank">Iris</a>
+      <a href="https://coracle.social/npub1qgs79628k04ldhaeepgs0ja72377rcexfz984gw7kk2p2f7ne65s9n022d" target="_blank">Coracle</a>
+      <a href="https://primal.net/p/npub1qgs79628k04ldhaeepgs0ja72377rcexfz984gw7kk2p2f7ne65s9n022d" target="_blank">Primal</a>
+      <a href="nostr:npub1qgs79628k04ldhaeepgs0ja72377rcexfz984gw7kk2p2f7ne65s9n022d">Nostr Extension</a>
+    </div>
+  </div>
 
-  <p><small>Powered by belief in the open web.</small></p>
+  <small>Powered by belief in the open web.</small>
+
 </body>
 </html>
-
